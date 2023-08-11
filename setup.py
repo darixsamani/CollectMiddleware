@@ -20,7 +20,7 @@ setup(
     long_description_content_type="text/markdown",
 
     
-    url='https://github.com/darixsamani/simpar_cli',
+    url='https://github.com/darixsamani/CollectMiddleware',
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -31,13 +31,13 @@ setup(
     package_dir={'':'./src'},     
     install_requires=[
         'anyio==3.7.1',
-'async-timeout==4.0.3',
-'exceptiongroup==1.1.2',
-'idna==3.4',
-'redis==4.6.0',
-'sniffio==1.3.0',
-'starlette==0.31.0',
-'typing_extensions==4.7.1',
+        'async-timeout==4.0.3',
+        'exceptiongroup==1.1.2',
+        'idna==3.4',
+        'redis==4.6.0',
+        'sniffio==1.3.0',
+        'starlette==0.31.0',
+        'typing_extensions==4.7.1',
 
     ],
 
