@@ -26,14 +26,17 @@ class CollectMiddleware(BaseHTTPMiddleware):
         content_length = request.headers.get("content-length")
         referer = request.headers.get("referer")
         accept_encoding = request.headers.get("accept-encoding")
-        origin = request.headers.ge("origin")
-        header_request = request.headers
+        origin = request.headers.get("origin")
         request_port = request.url.port
         query_parametre_request = request.query_params
         path_parametre_request = request.path_params
         cokies_request = request.cookies
+        accept = request.headers.get("accept")
+        content_type = request.headers.get('Content-Type')
+        authentification = request.headers.get("authorization")
+        content_length = request.headers.get("content-length")
+        accept_language = request.headers.get("accept-language")
         time = datetime.now()
-        # process the request and get the response    
-        response = await call_next(request)
+
         
         return response
