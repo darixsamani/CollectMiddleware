@@ -4,12 +4,13 @@ The objective of this project is to develop a middleware that can efficiently tr
 
 # how to install
 
-```bash
+``` bash
 pip3 install CollectMiddleware
 ```
+
 # How to use it
 
-```python
+``` python
 
 from fastapi import FastAPI
 from CollectMiddleware import CollectMiddleware
@@ -21,5 +22,8 @@ app.add_middleware(CollectMiddleware, mongodb_uri="mongodb://localhost:27017/")
 @app.get("/")
 async def main():
     return {"message": "Hello World"}
-
 ```
+
+## Example
+
+![](./img/example.png)
