@@ -38,6 +38,7 @@ setup(
         'sniffio==1.3.0',
         'starlette==0.31.0',
         'typing_extensions==4.7.1',
+        'pymongo==4.6.0',
 
     ],
 
