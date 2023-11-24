@@ -40,11 +40,5 @@ setup(
         'typing_extensions==4.7.1',
         'pymongo==4.6.0',
 
-    ],
-
-    entry_points={
-        'console_scripts': [
-            'simpar_cli = simpar_cli:main',
-        ]
-    }             
+    ],       
 )
