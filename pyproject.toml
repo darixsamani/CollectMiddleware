@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "collectmiddleware"
+name = "Collectmiddleware"
 version = "0.1.0"
 description = "this project consists of creating a middleware to transmit the data collected on an Object Request to a MongoDB Database for later analysis"
 authors = ["Darix SAMANI SIEWE <samanidarix@gmail.com>"]
