@@ -5,7 +5,7 @@ The objective of this project is to develop a middleware that can efficiently tr
 # how to install
 
 ``` bash
-pip3 install CollectMiddleware
+pip3 install collectmiddleware
 ```
 
 # How to use it
@@ -13,7 +13,8 @@ pip3 install CollectMiddleware
 ``` python
 
 from fastapi import FastAPI
-from CollectMiddleware import CollectMiddleware
+from collectmiddleware import CollectMiddleware
+
 app = FastAPI()
 
 app.add_middleware(CollectMiddleware, mongodb_uri="mongodb://localhost:27017/")
