@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "collectmiddleware"
+version = "0.1.0"
+description = "this project consists of creating a middleware to transmit the data collected on an Object Request to a MongoDB Database for later analysis"
+authors = ["Darix SAMANI SIEWE <samanidarix@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pymongo = "^4.7.3"
+starlette = "^0.37.2"
+typing-extensions = "^4.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
