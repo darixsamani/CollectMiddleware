@@ -12,9 +12,7 @@ class CollectMiddleware(BaseHTTPMiddleware):
         self.collection = self.db.CollectMiddleware
 
     async def dispatch(self, request: Request, call_next):
-        # do something with the request object, for example
-        # i want to collect data from Request object to redisTimeseris with this midddleware
-        
+
         client_host = request.client.host
         request_path = request.url.path
         request_methode = request.method
@@ -42,6 +40,7 @@ class CollectMiddleware(BaseHTTPMiddleware):
         data = {
             "time": time,
             "client_host": client_host,
+            "request_path": request_path,
             "request_methode": request_methode,
             "schema_request": schema_request,
             "port": port,
